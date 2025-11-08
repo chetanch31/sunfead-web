@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Warm Indian festival color palette */
+    --background: 35 40% 96%;
+    --foreground: 15 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 15 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 15 25% 15%;
+
+    /* Saffron orange as primary */
+    --primary: 24 100% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Marigold yellow as secondary */
+    --secondary: 45 100% 65%;
+    --secondary-foreground: 15 25% 15%;
+
+    /* Warm cream for muted elements */
+    --muted: 35 30% 92%;
+    --muted-foreground: 15 20% 45%;
+
+    /* Deep red as accent */
+    --accent: 350 65% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 35 25% 85%;
+    --input: 35 25% 85%;
+    --ring: 24 100% 60%;
+
+    --radius: 0.75rem;
+
+    /* Festival vibes - warm glow */
+    --glow-saffron: 24 100% 60%;
+    --glow-marigold: 45 100% 65%;
+    
+    /* Pattern overlay */
+    --pattern-overlay: 24 60% 92%;
+  }
+
+  .dark {
+    --background: 15 30% 8%;
+    --foreground: 35 30% 95%;
+
+    --card: 15 25% 12%;
+    --card-foreground: 35 30% 95%;
+
+    --popover: 15 25% 12%;
+    --popover-foreground: 35 30% 95%;
+
+    --primary: 24 100% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 45 100% 50%;
+    --secondary-foreground: 15 25% 15%;
+
+    --muted: 15 20% 18%;
+    --muted-foreground: 35 20% 65%;
+
+    --accent: 350 65% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 35 30% 95%;
+
+    --border: 15 20% 22%;
+    --input: 15 20% 22%;
+    --ring: 24 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+@layer utilities {
+  .festival-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+  }
+
+  .warm-glow {
+    box-shadow: 0 4px 20px -4px hsl(var(--glow-saffron) / 0.3);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .pattern-bg {
+    background-color: hsl(var(--pattern-overlay));
+    background-image: 
+      radial-gradient(circle at 20% 30%, hsl(var(--secondary) / 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 70%, hsl(var(--accent) / 0.1) 0%, transparent 50%);
+  }
+}

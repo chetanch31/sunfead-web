@@ -1,0 +1,6 @@
+@SunfeadApi_HostAddress = http://localhost:5113
+
+GET {{SunfeadApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
