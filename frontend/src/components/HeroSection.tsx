@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-banner.jpg";
 
 const HeroSection = () => {
@@ -16,12 +16,6 @@ const HeroSection = () => {
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-2xl">
-          <div className="inline-block mb-4 px-4 py-2 bg-secondary/20 rounded-full border border-secondary">
-            <span className="text-sm font-semibold text-secondary-foreground">
-              🎉 Festival Season Special - Up to 25% Off!
-            </span>
-          </div>
-          
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-6 leading-tight">
             Taste the
             <span className="block text-gradient">Tradition</span>
@@ -34,13 +28,16 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="festival-gradient border-0 text-white font-semibold group">
-              Shop Festival Bundles
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button size="lg" variant="outline" className="border-2">
-              Explore All Products
-            </Button>
+            <Link to="/shop">
+              <Button size="lg" variant="outline" className="border-2">
+                Explore All Products
+              </Button>
+            </Link>
+            <Link to="/bulk-order">
+              <Button size="lg" className="festival-gradient border-0 text-white">
+                Bulk Orders
+              </Button>
+            </Link>
           </div>
 
           {/* Trust Badges */}

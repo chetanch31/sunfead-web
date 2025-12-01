@@ -43,13 +43,13 @@ const ProductCard = ({
 
   return (
     <Card className="group overflow-hidden hover:shadow-lg transition-all duration-300 warm-glow">
-      <Link to={`/product/${id}`} className="block relative">
+      <Link to="/coming-soon" className="block relative">
         {/* Image */}
         <div className="aspect-square overflow-hidden bg-muted relative">
           <img
             src={image}
             alt={name}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
           />
           
           {/* Badges */}
@@ -91,7 +91,7 @@ const ProductCard = ({
           <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">
             {category}
           </p>
-          <Link to={`/product/${id}`}>
+          <Link to="/coming-soon">
             <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors line-clamp-2">
               {name}
             </h3>
@@ -132,10 +132,12 @@ const ProductCard = ({
         <p className="text-xs text-muted-foreground">Incl. of all taxes</p>
 
         {/* Add to Cart */}
-        <Button className="w-full festival-gradient border-0 text-white" size="sm">
-          <ShoppingCart className="h-4 w-4 mr-2" />
-          Add to Cart
-        </Button>
+        <Link to="/coming-soon">
+          <Button className="w-full festival-gradient border-0 text-white" size="sm">
+            <ShoppingCart className="h-4 w-4 mr-2" />
+            Add to Cart
+          </Button>
+        </Link>
       </div>
     </Card>
   );

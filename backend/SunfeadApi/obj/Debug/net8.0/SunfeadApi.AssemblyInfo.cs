@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SunfeadApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ac61abe4b0095a51e1e85a0449e75456ae21c5b")]
 [assembly: System.Reflection.AssemblyProductAttribute("SunfeadApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SunfeadApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

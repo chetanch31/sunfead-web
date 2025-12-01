@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-display font-bold text-gradient mb-4">
-              Mithaas
+              Sunfead
             </h3>
             <p className="text-muted-foreground mb-4">
               Bringing the authentic taste of India to your doorstep. Traditional recipes, 
@@ -43,11 +43,6 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/bundles" className="text-muted-foreground hover:text-primary transition-colors">
-                  Festival Bundles
-                </Link>
-              </li>
-              <li>
                 <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors">
                   About Us
                 </Link>
@@ -65,22 +60,22 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground mb-4">Customer Service</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/coming-soon" className="text-muted-foreground hover:text-primary transition-colors">
                   Contact Us
                 </Link>
               </li>
               <li>
-                <Link to="/shipping" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/coming-soon" className="text-muted-foreground hover:text-primary transition-colors">
                   Shipping Info
                 </Link>
               </li>
               <li>
-                <Link to="/returns" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/coming-soon" className="text-muted-foreground hover:text-primary transition-colors">
                   Returns Policy
                 </Link>
               </li>
               <li>
-                <Link to="/faq" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/coming-soon" className="text-muted-foreground hover:text-primary transition-colors">
                   FAQ
                 </Link>
               </li>
@@ -94,16 +89,16 @@ const Footer = () => {
               <li className="flex items-start gap-2 text-muted-foreground">
                 <MapPin className="h-5 w-5 flex-shrink-0 mt-0.5" />
                 <span className="text-sm">
-                  123 Heritage Street, Old Delhi, Delhi 110006
+                  New Delhi, India
                 </span>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Phone className="h-5 w-5 flex-shrink-0" />
-                <span className="text-sm">+91 98765 43210</span>
+                <span className="text-sm">+91 9927153555</span>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail className="h-5 w-5 flex-shrink-0" />
-                <span className="text-sm">hello@mithaas.com</span>
+                <span className="text-sm">info@sunfead.com</span>
               </li>
             </ul>
           </div>
@@ -130,13 +125,13 @@ const Footer = () => {
         {/* Bottom */}
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © 2024 Mithaas. All rights reserved.
+            © 2024 Sunfead. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
-            <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
+            <Link to="/coming-soon" className="text-muted-foreground hover:text-primary transition-colors">
               Privacy Policy
             </Link>
-            <Link to="/terms" className="text-muted-foreground hover:text-primary transition-colors">
+            <Link to="/coming-soon" className="text-muted-foreground hover:text-primary transition-colors">
               Terms of Service
             </Link>
           </div>

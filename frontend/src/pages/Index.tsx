@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import FeaturedProducts from "@/components/FeaturedProducts";
-import FestivalBundles from "@/components/FestivalBundles";
 import NewsletterPopup from "@/components/NewsletterPopup";
 import Footer from "@/components/Footer";
 
@@ -19,7 +18,7 @@ const Index = () => {
               A Legacy of Authentic Flavors
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
-              For over three generations, Mithaas has been the trusted name for authentic Indian 
+              For over three generations, Sunfead has been the trusted name for authentic Indian 
               snacks and sweets. What started as a small shop in the bustling lanes of Old Delhi 
               has grown into a beloved brand, bringing traditional recipes and festive joy to 
               families across India.
@@ -27,21 +26,20 @@ const Index = () => {
             <p className="text-lg text-muted-foreground">
               Every product is made with carefully sourced ingredients, time-honored techniques, 
               and the warmth of home-cooked goodness. From Diwali celebrations to everyday cravings, 
-              Mithaas is here to make every moment special.
+              Sunfead is here to make every moment special.
             </p>
           </div>
         </div>
       </section>
 
       <FeaturedProducts />
-      <FestivalBundles />
       
       {/* Why Choose Us */}
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-              Why Choose Mithaas?
+              Why Choose Sunfead?
             </h2>
           </div>
           
