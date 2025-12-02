@@ -3,33 +3,46 @@ import { Link } from "react-router-dom";
 
 const products = [
 	{
-		id: "1",
-		name: "Sunfead Besan",
-		image: "/besan.jpg",
-		category: "Besan",
-		variants: [{ id: "1-10", weight: "10g", mrp: 10, price: 10 }],
-	},
-	{
-		id: "2",
-		name: "Sunfead Daliya",
-		image: "/daliya.jpg",
-		category: "Daliya",
-		variants: [{ id: "2-10", weight: "10g", mrp: 10, price: 10 }],
-	},
-	{
 		id: "3",
-		name: "Sunfead Macaroni",
-		image: "/macaroni.jpg",
-		category: "Macaroni",
-		variants: [{ id: "3-10", weight: "10g", mrp: 10, price: 10 }],
+		name: "Fusilli Pasta",
+		image: "/static/products/Fusilli_Pasta_10_80gms.jpg",
+		category: "Pasta",
+		variants: [
+			{ id: "3-1", weight: "80gm", mrp: 10, price: 10 },
+			{ id: "3-2", weight: "80gm", mrp: 450, price: 450 },
+			{ id: "3-3", weight: "120gm", mrp: 500, price: 500 },
+		],
 	},
 	{
 		id: "4",
-		name: "Sunfead Pasta",
-		image: "/pasta.jpg",
+		name: "Macaroni",
+		image: "/static/products/Macroni_10_80gms_page-0001.jpg",
 		category: "Pasta",
-		variants: [{ id: "4-10", weight: "10g", mrp: 10, price: 10 }],
-	}
+		variants: [
+			{ id: "4-1", weight: "80gm", mrp: 10, price: 10 },
+			{ id: "4-2", weight: "120gm", mrp: 500, price: 500 },
+		],
+	},
+	{
+		id: "9",
+		name: "Roasted Vermicelli",
+		image: "/static/products/roastedvermicelli_10_75gm.jpg",
+		category: "Vermicelli",
+		variants: [
+			{ id: "9-1", weight: "75gm", mrp: 10, price: 10 },
+			{ id: "9-2", weight: "450gm", mrp: 70, price: 70 },
+		],
+	},
+	{
+		id: "10",
+		name: "Poha",
+		image: "/static/products/poha_10_100gm.jpg",
+		category: "Flour & Grains",
+		variants: [
+			{ id: "10-1", weight: "100gm", mrp: 10, price: 10 },
+			{ id: "10-2", weight: "500gm", mrp: 70, price: 70 },
+		],
+	},
 ];
 
 const FeaturedProducts = () => {
