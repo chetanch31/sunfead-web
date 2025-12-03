@@ -4,14 +4,6 @@ import ProductCard from "@/components/ProductCard";
 
 const allProducts = [
   {
-    id: "1",
-    name: "Besan",
-    image: "/static/products/Besan_3590_35kg.jpg",
-    category: "Flour & Grains",
-    description: "High-quality besan, perfect for making pakoras, laddoos, and other traditional dishes.",
-    variants: [{ id: "1-1", weight: "35kg", mrp: 3590, price: 3590 }],
-  },
-  {
     id: "2",
     name: "Dalia",
     image: "/static/products/dalia_10_150gm.jpg",
@@ -30,8 +22,8 @@ const allProducts = [
     description: "Premium fusilli pasta with perfect spiral shape for holding sauces.",
     variants: [
       { id: "3-1", weight: "80gm", mrp: 10, price: 10 },
-      { id: "3-2", weight: "80gm", mrp: 450, price: 450 },
       { id: "3-3", weight: "120gm", mrp: 500, price: 500 },
+      { id: "3-4", weight: "500gm", mrp: 120, price: 120 }, // updated
     ],
   },
   {
@@ -42,7 +34,7 @@ const allProducts = [
     description: "Delicious macaroni, perfect for quick and tasty meals.",
     variants: [
       { id: "4-1", weight: "80gm", mrp: 10, price: 10 },
-      { id: "4-2", weight: "120gm", mrp: 500, price: 500 },
+      { id: "4-3", weight: "500gm", mrp: 120, price: 120 }, // updated
     ],
   },
   {
@@ -50,7 +42,8 @@ const allProducts = [
     name: "Premium Macaroni",
     image: "/static/products/premiummacaroni_590_5kg.jpg",
     category: "Pasta",
-    description: "Premium quality macaroni in bulk pack for families and food businesses.",
+    description:
+      "Premium quality macaroni in bulk pack for families and food businesses.",
     variants: [{ id: "5-1", weight: "5kg", mrp: 590, price: 590 }],
   },
   {
@@ -61,7 +54,7 @@ const allProducts = [
     description: "Classic penne pasta, ideal for baked dishes and pasta salads.",
     variants: [
       { id: "6-1", weight: "80gm", mrp: 10, price: 10 },
-      { id: "6-2", weight: "70gm", mrp: 450, price: 450 },
+      { id: "6-3", weight: "450gm", mrp: 70, price: 70 }, // updated
     ],
   },
   {
@@ -80,10 +73,11 @@ const allProducts = [
     name: "Plain Vermicelli",
     image: "/static/products/plainvermicelli_10_80gm.jpg",
     category: "Vermicelli",
-    description: "Fine plain vermicelli, ideal for sweet and savory dishes.",
+    description:
+      "Fine plain vermicelli, ideal for sweet and savory dishes.",
     variants: [
       { id: "8-1", weight: "80gm", mrp: 10, price: 10 },
-      { id: "8-2", weight: "65gm", mrp: 450, price: 450 },
+      { id: "8-2", weight: "450gm", mrp: 65, price: 65 }, // updated
     ],
   },
   {
@@ -113,8 +107,20 @@ const allProducts = [
     name: "Soya Chunks",
     image: "/static/products/soyachunks_10_50gm.jpg",
     category: "Pulses & Protein",
-    description: "Protein-rich soya chunks, great for healthy and nutritious meals.",
+    description:
+      "Protein-rich soya chunks, great for healthy and nutritious meals.",
     variants: [{ id: "11-1", weight: "50gm", mrp: 10, price: 10 }],
+  },
+
+  // moved to last
+  {
+    id: "1",
+    name: "Besan",
+    image: "/static/products/Besan_3590_35kg.jpg",
+    category: "Flour & Grains",
+    description:
+      "High-quality besan, perfect for making pakoras, laddoos, and other traditional dishes.",
+    variants: [{ id: "1-1", weight: "35kg", mrp: 3590, price: 3590 }],
   },
 ];
 
