@@ -9,7 +9,6 @@ const products = [
 		category: "Pasta",
 		variants: [
 			{ id: "3-1", weight: "80gm", mrp: 10, price: 10 },
-			{ id: "3-2", weight: "80gm", mrp: 450, price: 450 },
 			{ id: "3-3", weight: "120gm", mrp: 500, price: 500 },
 		],
 	},
@@ -20,7 +19,6 @@ const products = [
 		category: "Pasta",
 		variants: [
 			{ id: "4-1", weight: "80gm", mrp: 10, price: 10 },
-			{ id: "4-2", weight: "120gm", mrp: 500, price: 500 },
 		],
 	},
 	{
