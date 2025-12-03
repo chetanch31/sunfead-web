@@ -22,7 +22,6 @@ const allProducts = [
     description: "Premium fusilli pasta with perfect spiral shape for holding sauces.",
     variants: [
       { id: "3-1", weight: "80gm", mrp: 10, price: 10 },
-      { id: "3-3", weight: "120gm", mrp: 500, price: 500 },
       { id: "3-4", weight: "500gm", mrp: 120, price: 120 }, // updated
     ],
   },
